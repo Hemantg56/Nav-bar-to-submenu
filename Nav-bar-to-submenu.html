@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav {
+            margin: 20px 0;
+            height: 35px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 35px;
+        }
+        
+        nav .menu {
+            list-style: none;
+            display: inline;
+            margin-right: 50px;
+            padding: 9px;
+            /* border: 1px solid; */
+            position: relative;
+        }
+        
+        nav .menu:hover {
+            border: 1px solid;
+            border-bottom: none;
+            background-color: #fff;
+        }
+        
+        nav .menu a {
+            text-decoration: none;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        nav .menu .submenu {
+            height: 450px;
+            width: 600px;
+            /* background-color: #c7c4c4; */
+            border: 1px solid;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 450px;
+            text-align: left;
+            visibility: hidden;
+        }
+        
+        nav .menu .submenu .x {
+            border-right: 1px solid;
+            margin: 10px 15px;
+        }
+        
+        nav .menu .submenu .rigtside {
+            border: none;
+        }
+        
+        nav .menu .submenu .y p {
+            font-size: 1.1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            border-bottom: 1px solid;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        
+        nav .menu .submenu .y .submenu1 {
+            list-style: none;
+        }
+        
+        nav .menu .submenu .y .submenu1 a {
+            color: blue;
+        }
+        
+        nav .menu:hover .submenu {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="menu">
+                <a href="">Home</a>
+            </li>
+            <li class="menu">
+                <a href="">Tutorials</a>
+            </li>
+            <li class="menu">
+                <a href="">Resources</a>
+                <div class="submenu">
+                    <div class="leftside x">
+                        <div class="up y">
+                            <p>Submenu#4</p>
+                            <ul class="dorp">
+                                <li class="submenu1"><a href="">Link 1</a></li>
+                                <li class="submenu1"><a href="">Link 2</a></li>
+                                <li class="submenu1"><a href="">Link 3</a></li>
+                                <li class="submenu1"><a href="">Link 4</a></li>
+                                <li class="submenu1"><a href="">Link 5</a></li>
+                            </ul>
+                        </div>
+                        <div class="down y">
+                            <p>Submenu#5</p>
+                            <ul class="dorp ">
+                                <li class="submenu1"><a href="">Link 6</a></li>
+                                <li class="submenu1"><a href="">Link 7</a></li>
+                                <li class="submenu1"><a href="">Link 8</a></li>
+                                <li class="submenu1"><a href="">Link 9</a></li>
+                                <li class="submenu1"><a href="">Link 10</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rigtside x">
+                        <div class="up y">
+                            <p>Submenu#6</p>
+                            <ul class="dorp">
+                                <li class="submenu1"><a href="">Link 11</a></li>
+                                <li class="submenu1"><a href="">Link 12</a></li>
+                                <li class="submenu1"><a href="">Link 13</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="center y">
+                            <p>Submenu#7</p>
+                            <ul class="dorp">
+                                <li class="submenu1"><a href="">Link 14</a>></li>
+                                <li class="submenu1"><a href="">Link 15</a></li>
+                                <li class="submenu1"><a href="">Link 16</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="down y">
+                            <p>Submenu#8</p>
+                            <ul class="dorp">
+                                <li class="submenu1"><a href="">Link 17</a></li>
+                                <li class="submenu1"><a href="">Link 18</a></li>
+                                <li class="submenu1"><a href="">Link 19</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li class="menu">
+                <a href="">About</a>
+            </li>
+            <li class="menu">
+                <a href="">Go Back TO The Tutorial</a>
+            </li>
+
+        </ul>
+    </nav>
+</body>
+
+</html>
